@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SA45_Team09_LogicUModelStoreContainer" CdmEntityContainer="SA45_Team09_LogicUEntities">
+    <EntitySetMapping Name="AdjustmentVouchers">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.AdjustmentVoucher">
+        <MappingFragment StoreEntitySet="AdjustmentVoucher">
+          <ScalarProperty Name="adjVID" ColumnName="adjVID" />
+          <ScalarProperty Name="storeStaffID" ColumnName="storeStaffID" />
+          <ScalarProperty Name="authorisedBy" ColumnName="authorisedBy" />
+          <ScalarProperty Name="adjDate" ColumnName="adjDate" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdjustmentVoucherItems">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.AdjustmentVoucherItem">
+        <MappingFragment StoreEntitySet="AdjustmentVoucherItem">
+          <ScalarProperty Name="adjVItemID" ColumnName="adjVItemID" />
+          <ScalarProperty Name="adjVID" ColumnName="adjVID" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CollectionPoints">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.CollectionPoint">
+        <MappingFragment StoreEntitySet="CollectionPoint">
+          <ScalarProperty Name="collectionPointID" ColumnName="collectionPointID" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="storeStaffID" ColumnName="storeStaffID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Delegates">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.Delegate">
+        <MappingFragment StoreEntitySet="Delegate">
+          <ScalarProperty Name="delegateID" ColumnName="delegateID" />
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="deptName" ColumnName="deptName" />
+          <ScalarProperty Name="contactStaffID" ColumnName="contactStaffID" />
+          <ScalarProperty Name="headStaffID" ColumnName="headStaffID" />
+          <ScalarProperty Name="repStaffID" ColumnName="repStaffID" />
+          <ScalarProperty Name="collectionPointID" ColumnName="collectionPointID" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeptNotifications">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.DeptNotification">
+        <MappingFragment StoreEntitySet="DeptNotification">
+          <ScalarProperty Name="notificationID" ColumnName="notificationID" />
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeptStaffs">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.DeptStaff">
+        <MappingFragment StoreEntitySet="DeptStaff">
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="staffName" ColumnName="staffName" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Disbursements">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.Disbursement">
+        <MappingFragment StoreEntitySet="Disbursement">
+          <ScalarProperty Name="disbursementID" ColumnName="disbursementID" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="storeStaffID" ColumnName="storeStaffID" />
+          <ScalarProperty Name="disburseDate" ColumnName="disburseDate" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DisbursementItems">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.DisbursementItem">
+        <MappingFragment StoreEntitySet="DisbursementItem">
+          <ScalarProperty Name="disbursementItemID" ColumnName="disbursementItemID" />
+          <ScalarProperty Name="disbursementID" ColumnName="disbursementID" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="expectedQty" ColumnName="expectedQty" />
+          <ScalarProperty Name="actualQty" ColumnName="actualQty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.Item">
+        <MappingFragment StoreEntitySet="Item">
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="reorderLevel" ColumnName="reorderLevel" />
+          <ScalarProperty Name="reorderQty" ColumnName="reorderQty" />
+          <ScalarProperty Name="unitOfMeasure" ColumnName="unitOfMeasure" />
+          <ScalarProperty Name="qtyOnHand" ColumnName="qtyOnHand" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Outstandings">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.Outstanding">
+        <MappingFragment StoreEntitySet="Outstanding">
+          <ScalarProperty Name="outstandingID" ColumnName="outstandingID" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="storeStaffID" ColumnName="storeStaffID" />
+          <ScalarProperty Name="disburseDate" ColumnName="disburseDate" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OutstandingItems">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.OutstandingItem">
+        <MappingFragment StoreEntitySet="OutstandingItem">
+          <ScalarProperty Name="outstandingItemID" ColumnName="outstandingItemID" />
+          <ScalarProperty Name="outstandingID" ColumnName="outstandingID" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="expectedQty" ColumnName="expectedQty" />
+          <ScalarProperty Name="actualQty" ColumnName="actualQty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrders">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.PurchaseOrder">
+        <MappingFragment StoreEntitySet="PurchaseOrder">
+          <ScalarProperty Name="poID" ColumnName="poID" />
+          <ScalarProperty Name="supplierID" ColumnName="supplierID" />
+          <ScalarProperty Name="orderBy" ColumnName="orderBy" />
+          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrderItems">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.PurchaseOrderItem">
+        <MappingFragment StoreEntitySet="PurchaseOrderItem">
+          <ScalarProperty Name="poItemID" ColumnName="poItemID" />
+          <ScalarProperty Name="poID" ColumnName="poID" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requisitions">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.Requisition">
+        <MappingFragment StoreEntitySet="Requisition">
+          <ScalarProperty Name="requisitionID" ColumnName="requisitionID" />
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="deptID" ColumnName="deptID" />
+          <ScalarProperty Name="requisitionDate" ColumnName="requisitionDate" />
+          <ScalarProperty Name="approvedDate" ColumnName="approvedDate" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionItems">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.RequisitionItem">
+        <MappingFragment StoreEntitySet="RequisitionItem">
+          <ScalarProperty Name="reqItemID" ColumnName="reqItemID" />
+          <ScalarProperty Name="requisitionID" ColumnName="requisitionID" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="requisitionQty" ColumnName="requisitionQty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Retrievals">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.Retrieval">
+        <MappingFragment StoreEntitySet="Retrieval">
+          <ScalarProperty Name="retrievalID" ColumnName="retrievalID" />
+          <ScalarProperty Name="retrievalDate" ColumnName="retrievalDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RetrievalItems">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.RetrievalItem">
+        <MappingFragment StoreEntitySet="RetrievalItem">
+          <ScalarProperty Name="retrievalItemID" ColumnName="retrievalItemID" />
+          <ScalarProperty Name="retrievalID" ColumnName="retrievalID" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="expectedQty" ColumnName="expectedQty" />
+          <ScalarProperty Name="actualQty" ColumnName="actualQty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockCards">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.StockCard">
+        <MappingFragment StoreEntitySet="StockCard">
+          <ScalarProperty Name="stockCardID" ColumnName="stockCardID" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="balance" ColumnName="balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoreNotifications">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.StoreNotification">
+        <MappingFragment StoreEntitySet="StoreNotification">
+          <ScalarProperty Name="notificationID" ColumnName="notificationID" />
+          <ScalarProperty Name="storeStaffID" ColumnName="storeStaffID" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoreStaffs">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.StoreStaff">
+        <MappingFragment StoreEntitySet="StoreStaff">
+          <ScalarProperty Name="storeStaffID" ColumnName="storeStaffID" />
+          <ScalarProperty Name="storeStaffName" ColumnName="storeStaffName" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="supplierID" ColumnName="supplierID" />
+          <ScalarProperty Name="supplierName" ColumnName="supplierName" />
+          <ScalarProperty Name="gstRegistrationNo" ColumnName="gstRegistrationNo" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="contactName" ColumnName="contactName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupplierItems">
+      <EntityTypeMapping TypeName="SA45_Team09_LogicUModel.SupplierItem">
+        <MappingFragment StoreEntitySet="SupplierItem">
+          <ScalarProperty Name="supplierItemID" ColumnName="supplierItemID" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="supplierID" ColumnName="supplierID" />
+          <ScalarProperty Name="preferenceRank" ColumnName="preferenceRank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
